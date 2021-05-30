@@ -1,9 +1,10 @@
+import { Paper } from '@material-ui/core'
 import React from 'react'
 
 export default function Navbar() {
     return (
-        <div>
+        <Paper elevation={1}>
             Navbar
-        </div>
+        </Paper>
     )
 }
