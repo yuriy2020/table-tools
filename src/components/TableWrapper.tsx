@@ -1,11 +1,11 @@
 import { Box, Paper } from '@material-ui/core'
 import React from 'react'
-import Navbar from './Navbar'
-import Panel from './Panel'
-import Table from './Table'
+import {Navbar} from './Navbar'
+import {Panel} from './Panel'
+import {Table} from './Table'
 import { makeStyles } from '@material-ui/core/styles'
 
-export default function TableWrapper() {
+export const TableWrapper: React.FC = () => {
   const classes = useStyles()
   return (
     <Paper elevation={0}>
@@ -21,12 +21,11 @@ export default function TableWrapper() {
 }
 
 const useStyles = makeStyles((theme) => ({
-    container:{
-        display:'flex'
-    },
-    wrap:{
-      display:'flex',
-      flexDirection:'column'
-    }
-
+  container: {
+    display: 'flex',
+  },
+  wrap: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
 }))
